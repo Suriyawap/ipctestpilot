@@ -16,12 +16,12 @@ const Home = () => {
             <div className='flex justify-around my-16 '>
               <div className='flex justify-center items-center  flex-col gap-4'> 
                 <img src={user} alt="" className='w-3/5 '/>
-                <button className='py-2 px-4 rounded bg-orange-300 hover:bg-orange-400'> <Link to="/login">User</Link></button>
+               <Link to="/signup" className='border bg-orange-300 py-2 px-4 rounded hover:bg-orange-400 hover:no-underline hover:text-white '>USER</Link>
             </div>
             <div className='flex justify-center items-center  flex-col gap-4'>
                 <img src={student} alt="" className='w-1/2'/>
-                <button className='py-2 px-4 rounded bg-orange-300 hover:bg-orange-400'>
-                <Link to="/login">Student</Link></button>
+                
+                <Link to="/signup" className='border bg-orange-300 py-2 px-4 rounded hover:bg-orange-400 hover:no-underline hover:text-white '>STUDENT</Link>
             </div>
             </div>
         </main>
