@@ -5,6 +5,8 @@ import logo from './assets/logo.png'
 import logo1 from './assets/undraw_add_notes_re_ln36.svg'
 import axios from 'axios';
 import { Toaster } from '@blueprintjs/core';
+import Homepage from './Homepage';
+import {useNavigate} from 'react-router-dom'
 
 let apptoaster=Toaster.create(
     {
@@ -13,6 +15,7 @@ let apptoaster=Toaster.create(
 )
 
 const Createcourse = () => {
+  let navi=useNavigate();
 
     let[selected,setselected]=useState([]);
     let[coursename,setcoursename]=useState("");
@@ -64,7 +67,7 @@ const Createcourse = () => {
          <header>
           <nav className='flex border p-1'>
             <ul className='flex gap-5 justify-center'>
-              <li><img src={logo} alt="img" className='w-20' /></li>
+              <li><img src={logo} alt="img" className='w-20' onClick={()=>navi('/homepage')}/></li>
               <li className='leading-10 my-2 '> <Link to="/createcourse" className=' border p-2 bg-orange-200 rounded  hover:bg-orange-400 hover:no-underline hover:text-white  '>CREATECOURSE</Link></li>
             </ul>
           </nav>

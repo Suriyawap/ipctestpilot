@@ -41,8 +41,8 @@ const Signup = () => {
     <div className=' w-2/5 my-16' >
         <img src={logo} alt="signuppng" className=''/>
     </div>
-        <div className='w-1/3 my-16'>
-        <form  className='flex flex-col  gap-4 border p-10' onSubmit={handlesubmit}>
+        <div className='w-1/3  my-16'>
+        <form  className='flex flex-col  gap-4 border p-10  ' onSubmit={handlesubmit}>
             <h2 className='text-center text-3xl'>SIGNUP</h2>
 
             <label htmlFor="">USERNAME:</label>

@@ -34,7 +34,7 @@ const Login = () => {
     }
     
   return (
-    <div className='h-screen'>
+    <div className='h-screen  flex'>
         <div className='flex justify-around items-center border '>
         <div className='border w-1/2 my-16' >
             <img src={logo} alt="loginpng" className=''/>

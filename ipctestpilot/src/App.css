@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+form{
+    box-sizing: border-box;
+    border: px solid white;
+    box-shadow: 0px 0px 15px black;
+}

@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div className='h-screen '>
-        <header className='flex border  justify-between p-2 '>
+        <header className='flex border  justify-between p-2 h-10%'>
          
             <img src={logo} alt="img" className='w-20' />
             <p className='text-violet-300'>IPCTESTPILOT</p>
         </header>
-        <main className=''>
+        <main className='h-4/5 flex '>
             <div className='flex justify-around my-16 '>
               <div className='flex justify-center items-center  flex-col gap-4'> 
                 <img src={user} alt="" className='w-3/5 '/>
@@ -25,7 +25,7 @@ const Home = () => {
             </div>
             </div>
         </main>
-        <footer className='flex justify-center items-center border bg-orange-200 pb-5'>
+        <footer className='flex justify-center items-center border bg-orange-200 pb-5 h-20%'>
             <div className='flex flex-col gap-1 items-center justify-center'>
                 <p>Footer About To Come</p>
                 <p>@Qspiders</p>
