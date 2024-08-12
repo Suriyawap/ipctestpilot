@@ -9,6 +9,8 @@ import Login from './Login'
 import Signup from './Signup'
 import Homepage from './Homepage'
 import Createcourse from './Createcourse'
+import Viewcourse from './Viewcourse'
+import Updatecourse from './Updatecourse'
 
 function App() {
   
@@ -21,6 +23,8 @@ function App() {
     <Route path="/signup" element={<Signup />} />
     <Route path="/homepage" element={<Homepage/>} />
     <Route path="/createcourse" element={<Createcourse/>} />
+    <Route path="/viewcourse" element={<Viewcourse/>} />
+    <Route path="/updatecourse" element={<Updatecourse/>} />
     </Routes>
     </BrowserRouter>
     </>

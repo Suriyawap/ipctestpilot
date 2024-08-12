@@ -16,7 +16,7 @@ const Login = () => {
     let[email,setemail]=useState("")
     let[password,setpassword]=useState("")
     let his=useNavigate()
-   
+   console.log("render")
     function handlesubmit(e){
         e.preventDefault()
         console.log(email)

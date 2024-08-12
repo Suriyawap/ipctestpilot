@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
@@ -14,8 +15,10 @@ let apptoaster=Toaster.create(
     }
 )
 
-const Createcourse = () => {
+const Updatecourse = ({id}) => {
   let navi=useNavigate();
+  let arr=axios.get(`http://localhost:8080/course/${id}`)
+    
 
     let[selected,setselected]=useState([]);
     let[coursename,setcoursename]=useState("");
@@ -68,7 +71,7 @@ const Createcourse = () => {
           <nav className='flex border p-1'>
             <ul className='flex gap-5 justify-center'>
               <li><img src={logo} alt="img" className='w-20' onClick={()=>navi('/homepage')}/></li>
-             
+              <li className='leading-10 my-2 '> <Link to="/createcourse" className=' border p-2 bg-orange-200 rounded  hover:bg-orange-400 hover:no-underline hover:text-white  '>CREATECOURSE</Link></li>
             </ul>
           </nav>
         </header>
@@ -106,4 +109,4 @@ const Createcourse = () => {
   )
 }
 
-export default Createcourse
+export default Updatecourse
