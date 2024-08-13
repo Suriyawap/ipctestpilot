@@ -45,8 +45,8 @@ const Homepage = () => {
         <Modal isOpen={istrainerOpen} onClose={() => setistrainerOpen(false)} >
             <div className='flex flex-col gap-4 justify-center items-center'>
             <h2 className="text-xl font-bold">TRAINER FUNCTIONS</h2>
-            <Link to="/createcourse" className=' border p-2  bg-orange-200 rounded  hover:bg-orange-400 hover:no-underline hover:text-white w-auto '>ADD TRAINER</Link>
-            <Link to="/createcourse" className=' border p-2 bg-orange-200 rounded  hover:bg-orange-400 hover:no-underline hover:text-white w-auto '>UPDATE TRAINER</Link>
+            <Link to="/addtrainer" className=' border p-2  bg-orange-200 rounded  hover:bg-orange-400 hover:no-underline hover:text-white w-auto '>ADD TRAINER</Link>
+            <Link to="/viewtrainers" className=' border p-2 bg-orange-200 rounded  hover:bg-orange-400 hover:no-underline hover:text-white w-auto '>VIEW TRAINERS</Link>
             <Link to="/createcourse" className=' border p-2 bg-orange-200 rounded  hover:bg-orange-400 hover:no-underline hover:text-white w-auto '>DELETE TRAINER</Link>
             </div>
           </Modal>

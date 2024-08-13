@@ -11,6 +11,8 @@ import Homepage from './Homepage'
 import Createcourse from './Createcourse'
 import Viewcourse from './Viewcourse'
 import Updatecourse from './Updatecourse'
+import Addtrainer from './Addtrainer'
+import Viewtrainers from './Viewtrainers'
 
 function App() {
   
@@ -25,6 +27,8 @@ function App() {
     <Route path="/createcourse" element={<Createcourse/>} />
     <Route path="/viewcourse" element={<Viewcourse/>} />
     <Route path="/updatecourse" element={<Updatecourse/>} />
+    <Route path="/addtrainer" element={<Addtrainer/>} />
+    <Route path="/viewtrainers" element={<Viewtrainers/>} />
     </Routes>
     </BrowserRouter>
     </>
