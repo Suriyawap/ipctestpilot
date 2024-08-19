@@ -21,7 +21,7 @@ const Home = () => {
             <div className='flex justify-center items-center  flex-col gap-4'>
                 <img src={student} alt="" className='w-1/2'/>
                 
-                <Link to="/signup" className='border bg-orange-300 py-2 px-4 rounded hover:bg-orange-400 hover:no-underline hover:text-white '>STUDENT</Link>
+                <Link to="/studentsignup" className='border bg-orange-300 py-2 px-4 rounded hover:bg-orange-400 hover:no-underline hover:text-white '>STUDENT</Link>
             </div>
             </div>
         </main>

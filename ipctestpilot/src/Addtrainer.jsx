@@ -40,7 +40,7 @@ const Addtrainer = () => {
        axios.post('http://localhost:8080/users',data)
        .then((data)=>{
         apptoaster.show({
-          message:"User Added Sucessfully",
+          message:"Trainer Added Sucessfully",
           intent:"success",
           timeout:2000
        })

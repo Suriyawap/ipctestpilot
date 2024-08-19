@@ -38,7 +38,7 @@ const Viewtrainers = () => {
                  .then(res=>setdata(res.data.data))
                  .then(()=>{
                   appt.show({
-                    message:"Course Deleted Sucessfully",
+                    message:"User Deleted Sucessfully",
                     intent:"danger",
                     timeout:2000
                  })

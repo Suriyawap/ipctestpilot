@@ -13,6 +13,8 @@ import Viewcourse from './Viewcourse'
 import Updatecourse from './Updatecourse'
 import Addtrainer from './Addtrainer'
 import Viewtrainers from './Viewtrainers'
+import Studentsignup from './Studentsignup'
+import Studentlogin from './Studentlogin'
 
 function App() {
   
@@ -29,6 +31,8 @@ function App() {
     <Route path="/updatecourse" element={<Updatecourse/>} />
     <Route path="/addtrainer" element={<Addtrainer/>} />
     <Route path="/viewtrainers" element={<Viewtrainers/>} />
+    <Route path="/studentsignup" element={<Studentsignup/>} />
+    <Route path="/studentlogin" element={<Studentlogin/>} />
     </Routes>
     </BrowserRouter>
     </>
